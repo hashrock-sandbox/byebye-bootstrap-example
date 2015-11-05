@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Card Layout</title>
+	<style>
+		*, *:before, *:after {
+			box-sizing: border-box;
+		}
+		body{
+			background: #DDD;
+		}
+		
+		html{
+			font-size: 16px;
+		}
+
+		.feature-list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.feature-item {
+			flex: 0 0 33.3333%;
+			border: 1px solid gray;
+			background: white;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.price-list {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -1em 0 0 -1em;
+		}
+		
+		.price-item {
+			flex: 0 0 33.3333%;
+			padding: 1em 0 0 1em;
+		}
+		
+		.price-item__inner{
+			border: 1px solid gray;
+			text-align: center;
+			background: white;
+			padding: 20px;
+		}
+		
+		@media (max-width: 800px) {
+			.feature-item {
+				flex: 0 0 100%;
+			}
+			.price-item {
+				flex: 0 0 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<h1>隙間なし</h1>
+
+	<div class="feature-list">
+		<div class="feature-item">33%</div>
+		<div class="feature-item">33%</div>
+		<div class="feature-item">33%</div>
+		<div class="feature-item">33%</div>
+	</div>
+
+	<h1>隙間あり</h1>
+
+	<div class="price-list">
+		<div class="price-item">
+			<div class="price-item__inner">
+				33%
+			</div>
+		</div>
+		<div class="price-item">
+			<div class="price-item__inner">
+				33%
+			</div>
+		</div>
+		<div class="price-item">
+			<div class="price-item__inner">
+				33%
+			</div>
+		</div>
+		<div class="price-item">
+			<div class="price-item__inner">
+				33%
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
