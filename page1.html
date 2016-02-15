@@ -27,6 +27,7 @@
 			background: white;
 			padding: 20px;
 			text-align: center;
+			max-width: 33.3333%; /* IE11 Bugfix */
 		}
 		
 		.price-list {
@@ -38,6 +39,7 @@
 		.price-item {
 			flex: 0 0 33.3333%;
 			padding: 1em 0 0 1em;
+			max-width: 33.3333%; /* IE11 Bugfix */
 		}
 		
 		.price-item__inner{
@@ -50,9 +52,11 @@
 		@media (max-width: 800px) {
 			.feature-item {
 				flex: 0 0 100%;
+				max-width: 100%; /* IE11 Bugfix */
 			}
 			.price-item {
 				flex: 0 0 100%;
+				max-width: 100%; /* IE11 Bugfix */
 			}
 		}
 
